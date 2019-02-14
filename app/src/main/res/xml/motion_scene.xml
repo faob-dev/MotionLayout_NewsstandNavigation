@@ -114,7 +114,6 @@
                     android:translationX="720dp"/>
 
         <Constraint android:id="@+id/t1"
-                    android:translationX="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     motion:layout_constraintTop_toTopOf="@+id/v1"
@@ -123,7 +122,6 @@
                     motion:layout_constraintEnd_toStartOf="@+id/v1"/>
 
         <Constraint android:id="@+id/t2"
-                    android:translationX="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     motion:layout_constraintTop_toTopOf="@+id/v2"
@@ -132,7 +130,6 @@
                     motion:layout_constraintEnd_toEndOf="@+id/v2"/>
 
         <Constraint android:id="@+id/t3"
-                    android:translationX="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     motion:layout_constraintTop_toTopOf="@+id/v3"
@@ -178,7 +175,6 @@
                     motion:layout_constraintEnd_toStartOf="@+id/v1"/>
 
         <Constraint android:id="@+id/t2"
-                    android:translationX="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     motion:layout_constraintTop_toTopOf="@+id/v2"
@@ -187,7 +183,6 @@
                     motion:layout_constraintStart_toStartOf="@+id/v2"/>
 
         <Constraint android:id="@+id/t3"
-                    android:translationX="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     motion:layout_constraintTop_toTopOf="@+id/v3"
@@ -196,7 +191,6 @@
                     motion:layout_constraintEnd_toEndOf="@+id/v3"/>
 
         <Constraint android:id="@+id/t4"
-                    android:translationX="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     motion:layout_constraintTop_toTopOf="@+id/v4"
@@ -242,7 +236,6 @@
                     motion:layout_constraintStart_toStartOf="@+id/v2"/>
 
         <Constraint android:id="@+id/t3"
-                    android:translationX="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     motion:layout_constraintTop_toTopOf="@+id/v3"
@@ -251,7 +244,6 @@
                     motion:layout_constraintEnd_toStartOf="@+id/v3"/>
 
         <Constraint android:id="@+id/t4"
-                    android:translationX="0dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     motion:layout_constraintTop_toTopOf="@+id/v4"
