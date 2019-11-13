@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MotionScene
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:motion="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/motion_scene">
+        xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
             motion:constraintSetStart="@id/s1"
             motion:constraintSetEnd="@id/e1"
-            motion:interpolator="linear"
             motion:duration="800">
 
         <OnClick
-                motion:target="@id/v1"
+                motion:targetId="@id/v1"
                 motion:clickAction="toggle"/>
     </Transition>
     <Transition
@@ -20,7 +17,7 @@
             motion:constraintSetEnd="@id/e2"
             motion:duration="800">
         <OnClick
-                motion:target="@id/v2"
+                motion:targetId="@id/v2"
                 motion:clickAction="toggle"/>
     </Transition>
     <Transition
@@ -28,7 +25,7 @@
             motion:constraintSetEnd="@id/e3"
             motion:duration="800">
         <OnClick
-                motion:target="@id/v3"
+                motion:targetId="@id/v3"
                 motion:clickAction="toggle"/>
     </Transition>
     <Transition
@@ -36,7 +33,7 @@
             motion:constraintSetEnd="@id/e4"
             motion:duration="800">
         <OnClick
-                motion:target="@id/v4"
+                motion:targetId="@id/v4"
                 motion:clickAction="toggle"/>
     </Transition>
 
@@ -44,22 +41,26 @@
     <ConstraintSet android:id="@+id/e1">
         <Constraint android:id="@+id/v1"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="200dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/v2"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:translationX="360dp"/>
+                    android:translationX="380dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/v3"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:translationX="720dp"/>
+                    android:translationX="720dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/v4"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:translationX="1080dp"/>
+                    android:translationX="1080dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/t1"
                     android:layout_width="wrap_content"
@@ -97,21 +98,25 @@
         <Constraint android:id="@+id/v1"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:translationX="-360dp"/>
+                    android:translationX="-360dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/v2"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="200dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/v3"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:translationX="360dp"/>
+                    android:translationX="360dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/v4"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:translationX="720dp"/>
+                    android:translationX="720dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/t1"
                     android:layout_width="wrap_content"
@@ -149,21 +154,25 @@
         <Constraint android:id="@+id/v1"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:translationX="-720dp"/>
+                    android:translationX="-720dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/v2"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:translationX="-360dp"/>
+                    android:translationX="-360dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/v3"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="200dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/v4"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:translationX="360dp"/>
+                    android:translationX="360dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/t1"
                     android:translationX="-360dp"
@@ -202,21 +211,25 @@
         <Constraint android:id="@+id/v1"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:translationX="-1080dp"/>
+                    android:translationX="-1080dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/v2"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:translationX="-720dp"/>
+                    android:translationX="-720dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/v3"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:translationX="-360dp"/>
+                    android:translationX="-360dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/v4"
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"/>
+                    android:layout_height="200dp"
+                    motion:layout_constraintTop_toTopOf="parent"/>
 
         <Constraint android:id="@+id/t1"
                     android:translationX="-720dp"
